@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/calData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSetInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/btCalendar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calData"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btSync"
+        android:onClick="openCal"
+        android:text="@string/calendar" />
+
+    <Button
+        android:id="@+id/btSync"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calData"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btSetInput"
+        android:onClick="showCalEvents"
+        android:text="@string/sync" />
+
+    <Button
+        android:id="@+id/btSetInput"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calData"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="42dp"
+        android:onClick="setInput"
+        android:text="@string/setInput" />
+
+    <CheckBox
+        android:id="@+id/cbShowAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btSetInput"
+        android:layout_below="@+id/btSync"
+        android:layout_marginTop="22dp"
+        android:checked="true"
+        android:text="@string/show_all_calendar" />
+   
+       
+    
+</RelativeLayout>

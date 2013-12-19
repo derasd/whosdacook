@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SetInputActivity" >
+
+    <CheckBox
+        android:id="@+id/cb22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cbCook"
+        android:layout_alignLeft="@+id/cb16"
+        android:layout_marginBottom="30dp"
+        android:text="@string/_22_00" />
+
+    <CheckBox
+        android:id="@+id/cb21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb22"
+        android:layout_alignLeft="@+id/cb22"
+        android:text="@string/_21_00" />
+
+    <CheckBox
+        android:id="@+id/cb20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb21"
+        android:layout_alignLeft="@+id/cb21"
+        android:text="@string/_20_00" />
+
+    <CheckBox
+        android:id="@+id/cb19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb20"
+        android:layout_alignLeft="@+id/cb20"
+        android:text="@string/_19_00" />
+
+    <CheckBox
+        android:id="@+id/cb18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb19"
+        android:layout_alignLeft="@+id/cb19"
+        android:text="@string/_18_00" />
+
+    <CheckBox
+        android:id="@+id/cb17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb18"
+        android:layout_alignLeft="@+id/cb17"
+        android:text="@string/_17_00" />
+
+    <CheckBox
+        android:id="@+id/cb16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb17"
+        android:layout_alignLeft="@+id/cb17"
+        android:text="@string/_16_00" />
+
+    <CheckBox
+        android:id="@+id/cbLeave30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cb22"
+        android:layout_alignLeft="@+id/cbArrive30"
+        android:text="@string/leave30" />
+
+    <CheckBox
+        android:id="@+id/cbArrive30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cb16"
+        android:layout_marginRight="22dp"
+        android:text="@string/arrive30" />
+
+    <CheckBox
+        android:id="@+id/cbCook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cbEat"
+        android:layout_alignLeft="@+id/cb22"
+        android:text="@string/kochen" />
+
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tfProp"
+        android:onClick="createEvent"
+        android:text="@string/send" />
+
+    <CheckBox
+        android:id="@+id/cbNot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tfProp"
+        android:layout_alignLeft="@+id/cbEat"
+        android:layout_marginBottom="14dp"
+        android:text="@string/need_nothing" />
+
+    <CheckBox
+        android:id="@+id/cbEat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cbNot"
+        android:layout_alignLeft="@+id/cbCook"
+        android:text="@string/mitessen" />
+
+    <AutoCompleteTextView
+        android:id="@+id/tfProp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbNot"
+        android:layout_alignTop="@+id/btSend"
+        android:completionHint="@string/proposal"
+        android:ems="10"
+        android:inputType="textCapSentences|textMultiLine" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+</RelativeLayout>
