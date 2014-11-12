@@ -22,13 +22,13 @@
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_alarm_setting" >
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="prefAlertEmail"
             android:summary="@string/pref_alert_email_summary"
             android:title="@string/pref_alert_email" >
         </CheckBoxPreference>
         <CheckBoxPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="prefAlertPop"
             android:summary="@string/pref_alert_pop_summary"
             android:title="@string/pref_alert_pop" >

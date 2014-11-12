@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Whosdacook</string>
+    <string name="app_name">Whosdacook?!</string>
     <string name="action_settings">Settings</string>
-    <string name="mitessen">Ich möchte mitessen!</string>
-    <string name="kochen">Ich möchte kochen!</string>
+    <string name="join">"I'll join!"</string>
+    <string name="cook">"I'll cook!"</string>
     <string name="sync">Show</string>
     <string name="zuHause">Wann bin ich zu Hause?</string>
     <string name="title_activity_input">InputActivity</string>
@@ -16,11 +16,17 @@
     <string name="_18_00">18:00</string>
     <string name="_17_00">17:00</string>
     <string name="_16_00">16:00</string>
-    <string name="arrive30">Arrive at +30min</string>
-    <string name="leave30">Leave at +30min</string>
+    <string name="arrive15">Arrive +15min</string>
+    <string name="arrive30">Arrive +30min</string>
+    <string name="leave15">Leave +15min</string>
+    <string name="leave30">Leave +30min</string>
     <string name="proposal">Menu Vorschlag</string>
     <string name="send">Send</string>
-    <string name="need_nothing">Ich brauche nichts!</string>
+    <string name="later">"I'll eat later!"</string>
+    <string name="plusOne">"Please cook +1!"</string>
+    <string name="not_attending">"Not attending!"</string>
+    <string name="cookOrJoin">"I'll cook/join!"</string>
+    
     <string name="calendar">Calendar</string>
     <string name="show_all_calendar">Show all Calendar</string>
     <string name="title_activity_menu">MenuActivity</string>
@@ -34,8 +40,6 @@
     <string name="pref_sync_frequency_summary">Not used</string>
     <string name="pref_user_profile">User Profile</string>
     <string name="pref_alarm_setting">Alarm Settings</string>
-    
-    
     <string name="pref_user_name">Set username</string>
     <string name="pref_user_name_summary">Only used for event title</string>
     <string name="pref_cal_name">Set calendar name</string>
@@ -44,5 +48,6 @@
     <string name="pref_cal_owner_summary">Shared cooking calendar (e.g. cook@gmail.com)</string>
     <string name="pref_cal_type">Set calendar type</string>
     <string name="pref_cal_type_summary">e.g. com.google</string>
+    <string name="input_activity_label">WhosDaCook?</string>
 
 </resources>
